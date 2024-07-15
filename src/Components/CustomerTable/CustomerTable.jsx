@@ -47,7 +47,7 @@ function CustomerTable() {
   return (
     <div className="container">
       <div>
-        <h1 className="mt-2">Customer Transaction App</h1>
+        <h2 className="mt-2">Customer Transaction App</h2>
 
         <input
           type="text"
