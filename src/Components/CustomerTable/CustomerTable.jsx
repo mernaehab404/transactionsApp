@@ -18,8 +18,8 @@ function CustomerTable() {
     try {
       const customersResponse = await fetchCustomers();
       const transactionsResponse = await fetchTransactions();
-      setCustomers(customersResponse.data);
-      setTransactions(transactionsResponse.data);
+      setCustomers(customersResponse.data.customers);
+      setTransactions(transactionsResponse.data.transactions);
     } catch (error) {
       console.error("Error fetching data: ", error);
     }
